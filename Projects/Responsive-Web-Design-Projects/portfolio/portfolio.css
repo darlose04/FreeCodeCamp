@@ -1,0 +1,38 @@
+body {
+	padding-top: 80px;
+	background: #d2d5d9;
+
+}
+
+.navbar-inverse {
+	background: #051C42;
+}
+
+.navbar-inverse .navbar-brand {
+	color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: white;
+}
+
+.jumbotron {
+	margin-left: 80px;
+	margin-right: 80px;
+}
+
+
+hr:nth-of-type(1) {
+	color: #051C42;
+	margin-right: 30px;
+	border: 1px solid ;
+}
+
+img:nth-of-type(1) {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.fab {
+	font-size: 2.0em;
+}

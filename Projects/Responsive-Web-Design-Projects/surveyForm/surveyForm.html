@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="surveyForm.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="entirePage">
+	<header>
+		<h1 id="title">Programming Survey</h1>
+	</header>
+
+	<div id="background">
+
+		<form id="survey-form">
+
+			<p id="description"><strong>Let us know a little about yourself and what aspects of programming you're interested in!</strong></p>
+
+			<div>
+				<div class="labels">
+					<label for="name" id="name-label" class="labels">Name: </label>
+				</div>
+				<div class="inputs">
+					<input type="text" name="Name" id="name" placeholder="Enter your name" required class="text-input">
+				</div>
+			</div>
+
+			<div>
+				<div class="labels">
+					<label for="email" id="email-label" class="labels">Email: </label>
+				</div>
+				<div class="inputs">
+					<input type="email" name="Email" id="email" placeholder="Enter your email" required class="text-input">
+				</div>
+			</div>
+
+			<div>
+				<div class="labels">
+					<label for="number" id="number-label" class="labels">Age: </label>
+				</div>
+				<div class="inputs">
+					<input type="number" name="age" id="number" placeholder="Enter your age" required class="text-input" min="1" max="110">
+				</div>
+			</div>
+
+			
+			<div>
+				<div class="labels">
+					<label for="male" class="labels">Male</label>
+				</div>
+				<div class="inputs">
+					<input id="male" type="radio" name="gender" value="male">
+				</div>
+				<div class="labels">
+					<label for="female" class="labels">Female</label>
+				</div>
+				<div class="inputs">
+					<input id="female" type="radio" name="gender" value="female">
+				</div>
+				<div class="labels">
+					<label for="other" class="labels">Other</label>
+				</div>
+				<div class="inputs">
+					<input id="other" type="radio" name="gender" value="other">
+				</div>
+			</div>
+			
+
+			<div>
+				<div class="labels">
+					<label for="dropdown" class="labels">For what do you currently use programming?</label>
+				</div>
+				<div class="inputs">
+					<select id="dropdown">
+						<option>Select an Option</option>
+						<option>School</option>
+						<option>Work</option>
+						<option>Hobby</option>
+						<option>Other</option>
+					</select>
+				</div>
+			</div>
+
+			<div>
+				<div class="labels">
+					<label for="time-dropdown" class="labels">How much time do you spend programming each week?</label>
+				</div>
+				<div class="inputs">	
+					<select id="time-dropdown">
+						<option>Select an Option</option>
+						<option>0-15 Hours</option>
+						<option>15-40 Hours</option>
+						<option>>40 Hours</option>
+					</select>
+				</div>
+			</div>
+
+			<div>
+				<div class="labels">
+					<label for="languages" class="labels">What languages do you primarily code in? (Check all that apply)</label>
+				</div>
+				<div class="inputs">
+					<ul id="languages" style="list-style: none;">
+						<li><input type="checkbox" name="languages" value=1>JavaScript</li>
+						<li><input type="checkbox" name="languages" value=2>Python</li>
+						<li><input type="checkbox" name="languages" value=3>Java</li>
+						<li><input type="checkbox" name="languages" value=4>Ruby</li>
+						<li><input type="checkbox" name="languages" value=5>PHP</li>
+						<li><input type="checkbox" name="languages" value=6>C++</li>
+						<li><input type="checkbox" name="languages" value=7>CSS</li>
+						<li><input type="checkbox" name="languages" value=8>C#</li>
+						<li><input type="checkbox" name="languages" value=9>Go</li>
+						<li><input type="checkbox" name="languages" value=10>C</li>
+						<li><input type="checkbox" name="languages" value=11>TypeScript</li>
+						<li><input type="checkbox" name="languages" value=12>HTML</li>
+						<li><input type="checkbox" name="languages" value=13>Swift</li>
+						<li><input type="checkbox" name="languages" value=14>SQL</li>
+						<li><input type="checkbox" name="languages" value=15>Objective-C</li>
+						<li><input type="checkbox" name="languages" value=16>Other</li>
+					</ul>
+				</div>
+			</div>
+
+			<div>
+				<div class="labels">
+					<label for="use" class="labels">What areas of programming do you enjoy? (Check all that apply)</label>
+				</div>
+				<div class="inputs">
+					<ul id="uses" style="list-style: none;">
+						<li><input type="checkbox" name="uses" value=17> Web Development</li>
+						<li><input type="checkbox" name="uses" value=18>Game Development</li>
+						<li><input type="checkbox" name="uses" value=19>Data Science</li>
+						<li><input type="checkbox" name="uses" value=20>Mobile Development</li>
+						<li><input type="checkbox" name="uses" value=21>Database Management</li>
+						<li><input type="checkbox" name="uses" value=22>Automation</li>
+						<li><input type="checkbox" name="uses" value=23>Other</li>
+					</ul>
+				</div>
+			</div>
+
+			<div>
+				<div class="labels">
+					<label for="extra-comments" class="labels">Please add any other additional information you deem to be pertinent:</label>
+				</div>
+				<div class="inputs">
+					<textarea id="extra-comments" placeholder="Enter additional information here..."></textarea>
+				</div>
+			</div>
+
+			<div>
+				<button id="submit" type="submit">Submit</button>
+			</div>
+		</form>
+	</div>
+
+</div>
+</body>
+</html>
