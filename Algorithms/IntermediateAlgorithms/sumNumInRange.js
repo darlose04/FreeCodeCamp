@@ -6,9 +6,16 @@ function sumAll(arr) {
     let y = arr[1];
     let sum = 0;
 
-    while (x <= y) {
-        sum += x;
-        x++;
+    if (x < y) {
+        while (x <= y) {
+            sum += x;
+            x++;
+        }
+    } else {
+        while (x >= y) {
+            sum += x;
+            x--;
+        }
     }
 
     return sum;
