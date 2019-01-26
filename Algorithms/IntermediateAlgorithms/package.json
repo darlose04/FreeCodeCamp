@@ -1,0 +1,22 @@
+{
+  "name": "intermediatealgorithms",
+  "version": "1.0.0",
+  "description": "Algorithms from freeCodeCamp",
+  "main": "none",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darlose/FreeCodeCamp.git"
+  },
+  "author": "Zach Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darlose/FreeCodeCamp/issues"
+  },
+  "homepage": "https://github.com/darlose/FreeCodeCamp#readme",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
