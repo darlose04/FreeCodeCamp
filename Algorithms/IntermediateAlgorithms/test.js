@@ -1,6 +1,7 @@
 const sumNums = require('./sumNumInRange.js');
 const assert = require('assert');
 
+// sumNumInRange
 // testing with smaller number first
 it('correctly calculates the sum of the numbers in the range 1 to 4', () => {
     assert.equal(sumNums.sumAll([1, 4]), 10);
