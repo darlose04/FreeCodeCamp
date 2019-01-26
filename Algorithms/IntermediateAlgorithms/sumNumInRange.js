@@ -4,3 +4,7 @@
 function sumAll(arr) {
     
 }
+
+module.exports = {
+    sumAll
+}
